@@ -7,14 +7,16 @@ export default function certificate() {
       <div className="relative h-55">
         {/* Skewed Projects box on the side */}
         <div className="absolute left-4 top-30 w-55 h-15 bg-white transform -skew-x-30 flex items-center justify-center shadow">
-          <div className="transform skew-x-30 text-black text-center">College's Annual Student Research Conference</div>
+          <div className="transform skew-x-30 text-black text-center">
+            College&#39;s Annual Student Research Conference
+          </div>
         </div>
       </div>
       <iframe className="mx-auto" src="/research.pdf" width="80%" height="600px" title="Certificate"></iframe>
       <div className="mt-7 text-center w-xl mx-auto">
         <p>
-          Participated in our college's Annual Student Research Conference and presented my paper on "The Impact of
-          Artificial Intelligence on Employment Dynamics: Myth vs Reality".
+          Participated in our college&#39;s Annual Student Research Conference and presented my paper on &quot;The
+          Impact of Artificial Intelligence on Employment Dynamics: Myth vs Reality&quot;.
         </p>
       </div>
       <div className="relative h-55">
