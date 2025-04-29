@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import about from '../app/about/page';
+import '../app/about/page';
+import '../app/certificates/page';
+import '../app/contact/page';
 import Link from 'next/link';
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,10 +52,10 @@ export default function Menu() {
           <Link href={'about'} className="text-black hover:underline">
             About
           </Link>
-          <Link href={'about'} className="text-black hover:underline">
+          <Link href={'certificates'} className="text-black hover:underline">
             Certificates
           </Link>
-          <Link href={'about'} className="text-black hover:underline">
+          <Link href={'contact'} className="text-black hover:underline">
             Contact
           </Link>
         </div>
