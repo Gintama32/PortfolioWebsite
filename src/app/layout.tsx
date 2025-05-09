@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} antialiased min-h-screen flex flex-col`}>
         <Menu />
-        {children}
+        <main className="flex-grow pb-16">{children}</main>
         <Footer />
       </body>
     </html>

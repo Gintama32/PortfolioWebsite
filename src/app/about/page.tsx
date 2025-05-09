@@ -1,6 +1,6 @@
 export default function page() {
   return (
-    <div className="flex-grow">
+    <div>
       <div className="text-center mx-auto mt-8 w-55 h-11 bg-white transform -skew-x-40 flex items-center justify-center shadow">
         <div className="transform skew-x-40 text-black text-3xl">About Me</div>
       </div>
@@ -13,13 +13,15 @@ export default function page() {
           industry trends.
         </p>
       </div>
-      <button className="block mx-auto mt-7 text-blue-400 bg-white rounded-full px-3 text-2xl text-center">
-        Resume
+      <button className="cursor-pointer block mx-auto mt-7 text-blue-400 bg-white rounded-full px-3 text-2xl text-center">
+        <a href="/res.pdf" download>
+          Resume
+        </a>
       </button>
       <div className="text-center mt-8 ml-4 w-80 h-11 bg-white transform -skew-x-40 flex items-center justify-center shadow">
         <div className="transform skew-x-40 text-black text-3xl">Technical Expertise</div>
       </div>
-      <table className="table-auto mx-auto mt-9 border-collapse border border-gray-300 bg-white text-black">
+      <table className="table-auto mx-auto mt-9 border-collapse border border-gray-300 dark:bg-gray-800 text-white">
         <tbody>
           <tr>
             <td className="border border-gray-700 px-4 py-2 w-40">Programming Languages</td>
