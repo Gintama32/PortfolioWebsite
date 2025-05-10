@@ -1,6 +1,7 @@
+import './about.css';
 export default function page() {
   return (
-    <div>
+    <div className="fade">
       <div className="text-center mx-auto mt-8 w-55 h-11 bg-white transform -skew-x-40 flex items-center justify-center shadow">
         <div className="transform skew-x-40 text-black text-3xl">About Me</div>
       </div>
@@ -13,12 +14,7 @@ export default function page() {
           industry trends.
         </p>
       </div>
-      <button className="cursor-pointer block mx-auto mt-7 text-blue-400 bg-white rounded-full px-3 text-2xl text-center">
-        <a href="/res.pdf" download>
-          Resume
-        </a>
-      </button>
-      <div className="text-center mt-8 ml-4 w-80 h-11 bg-white transform -skew-x-40 flex items-center justify-center shadow">
+      <div className="text-center mt-8 ml-4 w-80 h-11 bg-white transform -skew-x-40 flex items-center justify-center shadow slide">
         <div className="transform skew-x-40 text-black text-3xl">Technical Expertise</div>
       </div>
       <table className="table-auto mx-auto mt-9 border-collapse border border-gray-300 dark:bg-gray-800 text-white">
@@ -59,6 +55,11 @@ export default function page() {
           </tr>
         </tbody>
       </table>
+      <button className="fixed bottom-[10vh] left-1/2 cursor-pointer mt-9 bg-cyan-500 shadow-lg slide_up text-2xl rounded-md p-2 hover:shadow-cyan-500/50">
+        <a href="/res.pdf" download>
+          Resume
+        </a>
+      </button>
     </div>
   );
 }

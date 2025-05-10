@@ -2,20 +2,20 @@ export default function Home() {
   return (
     <>
       <div className="text-center p-4">
-        <h1 className="text-4xl mt-7">Furba Lama Sherpa</h1>
-        <h3 className="text-blue-400 text-xl mt-4"> Full-Stack Developer</h3>
+        <h1 className="text-4xl mt-7 scroll slide_down">Furba Lama Sherpa</h1>
+        <h3 className="text-blue-400 text-xl mt-4 scroll slide_down"> Full-Stack Developer</h3>
       </div>
 
       {/* Container with relative positioning for Projects */}
       <div className="relative h-55">
         {/* Skewed Projects box on the side */}
-        <div className="absolute left-4 top-30 w-55 h-11 bg-white transform -skew-x-30 flex items-center justify-center shadow">
+        <div className="absolute left-4 top-30 w-55 h-11 bg-white transform -skew-x-30 flex items-center justify-center slide">
           <div className="transform skew-x-30 text-black text-3xl">Projects</div>
         </div>
       </div>
 
       {/* Centered paragraph below */}
-      <div className="text-center mt-4">
+      <div className="text-center mt-4 fade">
         <p>Anonymous Next.js Messaging Web App</p>
         <p className="mt-5 text-2xl w-2/3 mx-auto">
           Secure, full-stack anonymous messaging web application using Next.js, incorporating server-side rendering
@@ -60,7 +60,7 @@ export default function Home() {
           </tbody>
         </table>
       </div>
-      <div className="text-center mt-10">
+      <div className="text-center mt-10 fade">
         <p>
           <a href="https://github.com/Gintama32/ConceptFinder.git">AI-Powered Image Analysis Web App</a>
         </p>
@@ -101,12 +101,12 @@ export default function Home() {
       </div>
       <div className="relative h-55">
         {/* Skewed Projects box on the side */}
-        <div className="absolute right-3 top-30 w-55 h-11 bg-white transform -skew-x-30 flex items-center justify-center shadow">
+        <div className="absolute right-3 top-30 w-55 h-11 bg-white transform -skew-x-30 flex items-center justify-center shadow scroll_slide">
           <div className="transform skew-x-30 text-black text-3xl">Internships</div>
         </div>
       </div>
-      <div className="flex justify-center gap-45 flex-wrap">
-        <div className="p-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 text-center hover:scale-105 transition-transform duration-500 ease-in-out cursor-pointer">
+      <div className="flex justify-center gap-45 flex-wrap scroll">
+        <div className="blk p-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 text-center hover:scale-105 transition-transform duration-500 ease-in-out cursor-pointer">
           <p className="text-lg">Radical AI</p>
           <p className="mt-3">Aug 2024 – Sept 2024</p>
           <p className="mt-1">AI Engineer</p>

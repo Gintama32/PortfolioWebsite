@@ -17,4 +17,58 @@ body {
   color: var(--foreground);
   font-family: ui-sans-serif, system-ui, -apple-system;
 }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide_from_left {
+  from {
+    transform: translateX(-100%) skew(-30deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) skew(-30deg);
+    opacity: 1;
+  }
+}
+.fade {
+  animation: fade-in 1s ease-in forwards;
+}
+.slide {
+  animation: slide_from_left 1s ease-in forwards;
+}
+@keyframes scroll_anim {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.scroll {
+  animation: scroll_anim linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+@keyframes scroll_left {
+  from {
+    transform: translateX(calc(-100vw - 100%)) skew(-30deg);
+    opactiy: 0;
+  }
+  to {
+    transform: translateX(0) skew(-30deg);
+    opacity: 1;
+  }
+}
+.scroll_slide {
+  animation: scroll_left linear;
+  animation-timeline: view();
+  animation-range: entry 10% cover 50%;
+}
 
